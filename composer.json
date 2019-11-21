@@ -1,0 +1,23 @@
+{
+    "name": "velas",
+    "type": "library",
+    "require": {
+        "php":">=7.2.0",
+        "tuupola/base58": "^2.0",
+        "ext-sodium": "*",
+        "guzzlehttp/guzzle": "^6.3",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8",
+        "codeception/codeception": "^3.0"
+
+    },
+    "description": "library for working with velas",
+    "autoload": {
+        "psr-4": {
+            "velascrypto\\": "velascrypto/",
+            "rpcClient\\": "rpcClient/"
+        }
+    }
+}
