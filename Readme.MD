@@ -44,7 +44,7 @@ $unspents = $client::$wallet->GetUnspent($address);
 #### Create transaction
 create, sign and convert transaction to json:
 ```php
-$tx = new Transaction($unspent, $amount, $keypair, $from, $to, $commission);
+$tx = new Transaction($unspents, $amount, $keypair, $from, $to, $commission);
 $tx = $tx->Sign();
 $tx->ToJSON();
 ```
